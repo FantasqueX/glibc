@@ -1380,7 +1380,7 @@ printf_positional (FILE *s, const CHAR_T *format, int readonly_format,
 	{
 	  int function_done;
 
-	  if (spec <= UCHAR_MAX
+	  if ((int) spec <= UCHAR_MAX
 	      && __printf_function_table != NULL
 	      && __printf_function_table[(size_t) spec] != NULL)
 	    {
